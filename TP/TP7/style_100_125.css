@@ -1,0 +1,32 @@
+@media screen and (max-width: 1535px) 
+{
+
+    #barre {
+        width: 500px;
+
+    }
+
+    header>img {
+        padding-right: 100px;
+    }
+
+    main>#part1>#right {
+        width: auto;
+        margin: 0;
+    }
+
+    #container>#chiffre>ul>div {
+        display: inline-block;
+        width: calc(49% - 1px);
+        margin-top: 20px;
+    }
+
+    main>#part1>#right {
+        margin-bottom: 30px;
+    }
+
+    main>#part3 {
+        display: flex;
+    }
+
+}

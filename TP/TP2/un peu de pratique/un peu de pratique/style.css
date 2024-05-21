@@ -1,0 +1,23 @@
+ol li{
+	color: red;
+}
+
+ul li{
+	color: red;
+}
+
+div li{
+	color: red;
+}
+
+.important{
+	color: red;
+}
+
+#myList{
+	color: red;
+}
+
+ul li, .important{
+	color: red;
+}

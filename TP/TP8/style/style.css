@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, a {
+	list-style: none;
+	text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*body*/
+
+/*header*/
+	header {
+		width: 100%;
+		background-color: rgb(202, 202, 202);
+	}
+
+	header>nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header>nav>ul>li {
+		display: inline-block;
+		padding: 15px;
+		margin-left: 20px;
+	}
+
+	header>nav>ul>li:last-child {
+		margin-right: 20px;
+	}
+
+	header>nav>#bleu>li:first-child, header>nav>#bleu>li>a:first-child {
+		text-decoration:underline;
+		color:blue;
+	}
+
+/*header*/
+
+/*main part1*/
+	main {
+		width: 80%;
+		margin: auto;
+	}
+
+	#recherche {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#recherche>div {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#recherche>div:first-child {
+		margin-left: 100px;
+	}
+
+	#recherche>div:nth-child(2) {
+		margin-right: 0px;
+	}
+
+	input {
+		border-radius: 30px;
+	}
+
+	#recherche>div>h1 {
+		color: black;
+		font-size: 35px;
+	}
+/*main part1*/
+
+/*main part2*/
+	#menu>ul>li>ul {
+		display: none;
+		position: absolute;
+		background-color: rgb(202, 202, 202);
+	}
+
+	#menu>ul {
+		text-align: center;
+	}
+
+	#menu>ul>li {
+		display: inline-block;
+		width: calc(19.7% - 1px);
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+	}
+
+	#menu>ul>li>a {
+		color: #000;
+	}
+
+	#menu>ul>li:hover>ul {
+		display: block;
+		text-align: center;
+		width: calc(15.8% - 2px);
+	}
+
+	a {
+		color: black;
+	}
+
+	#menu>ul>li>ul>li:hover {
+		background-color: white;
+		transition: 1s;
+	}
+
+	#menu>ul>li:hover {
+		background-color: rgb(202, 202, 202);
+	}
+
+	.noBorder {
+		border: 0px;
+	}
+/*main part2*/
+
+
+/*main part3*/
+	#firstBlock>h1 {
+		margin-top: 30px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	#image {
+		float: right;
+		padding: 0px 0px 14px 20px;
+		margin-top: 10px;
+		object-fit: cover;
+	}
+
+	#firstBlock>p {
+		margin-top: 10px;
+		text-align: justify;
+	}
+/*main part3*/
+
+/*main part4*/
+	#secondBlock {
+		display: flex;
+		margin-top: 20px;
+		justify-content: center;
+	}
+
+	.fondnoir {
+		background-color: #000;
+		color: white;
+		font-weight: bold;
+	}
+
+	.fondgris {
+		background-color: gray;
+	}
+
+	table, td, th{
+		border: solid 2px black;
+		text-align: center;
+	}
+
+	td, th{
+		padding: 20px 50px 20px 50px;
+	}
+/*main part4*/
+
+/*main part5*/
+	#thirdBlock>section {
+		position: relative;
+		display: flex;
+		column-gap: 15px;
+	}
+
+	#thirdBlock>section>.img {
+		width: 49%;
+		margin-top: 20px;
+		height: 450px;
+		object-fit: cover;
+	}
+/*main part5*/
+
+/*main part6*/
+	#fourthBlock>h1 {
+		margin-top: 30px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	#container>section {
+		width: calc(32.4% - 1px);
+		display: inline-block;
+		margin-left: 1%;
+	}
+
+	#container>section:first-child {
+		margin-left: 0px;
+	}
+
+	#container>section>h1, #container>section>p, #container>section>div>a {
+		margin-top: 5px;
+		text-align: justify;
+	}
+
+	#container>section>h1 {
+		font-size: 18px;
+	}
+
+	#container>section>div>a {
+		text-decoration: underline;
+		color: blue;
+		float: right;
+		padding-bottom: 10px;
+	}
+/*main part6*/
+
+/*footer*/
+	footer {
+		width: 100%;
+		margin: auto;
+	}
+
+	footer>nav {
+		background-color: #000;
+		margin-top: 40px;
+	}
+
+	footer>nav>ul {
+		text-align: center;
+	}
+
+	footer>nav>ul>li {
+		display: inline-block;
+		width: calc(24% - 1px);
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+	}
+
+	footer>nav>ul>li>a {
+		color: white;
+	}
+/*footer*/

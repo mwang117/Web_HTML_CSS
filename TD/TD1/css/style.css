@@ -1,0 +1,11 @@
+div{
+    color : red;
+}
+
+li.orange, li#orange{
+    color: orange;
+}
+
+ul li{
+    color : red;
+}

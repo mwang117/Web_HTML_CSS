@@ -1,0 +1,19 @@
+@media screen and (max-width: 1080px)  
+{
+
+    #barre {
+        width: 300px;
+    }
+
+    header>#menu_droite {
+        margin-bottom: 0;
+    }
+
+    header>#menu_droite>nav>ul {
+        display: none;
+    }
+
+    header>#menu_droite>#menu {
+        display: block;
+    }
+}
